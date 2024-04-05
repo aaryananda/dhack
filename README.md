@@ -4,16 +4,17 @@
 
 
 ## Team Name
-Name  
+Name  BitRollers
 
 # Team Member
-Member 1 Github Link
+Member 1 Github Link https://github.com/aaryananda
 
-MEmber 2 Github Link
+MEmber 2 Github Link https://github.com/JoyceKMathew
 
 ## Idea
 Breif Idea in two three sentences 
 
+To design a website that would generate receipt for all the bill payments in men's and women's hostel of cet there by eliminating the difficulty in finding the bill from the pile of bills in the hostel office.The situation of more than 1000 students  going hostel office to find their mess bills is quite hectic.This website would help in avoiding errors in the bill (since lots of errors are now being reported regarding existing dues),make payment easier, faster and secure and loss of bill would no longer be a problem.
 ## Features 
 1. 
 
