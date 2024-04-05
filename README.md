@@ -7,9 +7,9 @@
 Name  BitRollers
 
 # Team Member
-Member 1 Github Link https://github.com/aaryananda
+Aarya Nanda Sajan Github Link https://github.com/aaryananda
 
-MEmber 2 Github Link https://github.com/JoyceKMathew
+Joyce  K Mathew Github Link https://github.com/JoyceKMathew
 
 ## Idea
 Breif Idea in two three sentences 
