@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header class="header-box">
+        <img src="cropped-CET-Emblom-transparent-2-e1536389478507.png" alt="Institution Logo">
+        <h1>College of engineering Trivandrum</h1>
+    </header>
+    <title>Payment Receipt Generator</title>
+    <link rel="stylesheet" href="receipt.css">
+</head>
+<body>
+    <div class="container">
+       
+        <h2>Payment Receipt Generator</h2>
+        <form id="paymentForm">
+            <label for="lhno">Hostel Admission No:</label>
+            <input type="lhno" id="lhno" name="lhno" required>
+            <label for="Name">Name</label>
+            <input type="name" id="lhno" name="lhno" required>
+            <label for="">Amount:</label>
+            <input type="amount" id="amount" name="amount" required>
+
+            <label for="">Scan QR Code to pay:</label>
+
+
+
+            <img class="receipt-image" src="WhatsApp Image 2024-04-05 at 12.06.11_9e10fe9f.jpg" alt="Image description">
+
+           
+
+            <button type="submit">Generate Receipt</button>
+        </form>
+        <div id="receipt" class="hidden">
+            <h3>Receipt</h3>
+            <p><strong>Amount:</strong> <span id="receiptAmount"></span></p>
+            <p><strong>Description:</strong> <span id="receiptDescription"></span></p>
+        </div>
+    </div>
+    <script src="receipt.js"></script>
+</body>
+</html>
