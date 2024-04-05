@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <h1>COLLEGE OF ENGINEERING TRIVANDRUM</h1>
+  <title>Bill Payment</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <h1>Bill Payment</h1>
+  </header>
+  <main>
+    <section id="bill-form">
+      <h2>Enter Bill Details</h2>
+      <form id="payment-form">
+        <label for="select">Select</label>
+        <select id="select">
+          <option value="MH">MH</option>
+          <option value="LH">LH</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <label for="bill-type">Bill Type:</label>
+        <select id="bill-type">
+          <option value="electricity">MESS BILL</option>
+          <option value="electricity">LAUNDARY</option>
+          <option value="electricity">EXTRAS</option>
+
+          <!-- Add more options as needed -->
+        </select>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <label for="User name">User name:</label>
+        <input type="text" id="User name" placeholder="Enter user name">
+        <br>
+        <br>
+        <label for="Password">Password:</label>
+        <input type="text" id="Password" placeholder="Enter Password">
+        <br>
+        <br>
+        <a href="step2.html">
+        <button onclick="window.location.href='step2.html';">NEXT</button>
+        </a>
+      </form>
+    </section>
+    <section id="payment-history">
+      <h2>Payment History</h2>
+      <ul id="history-list">
+        <!-- Payment history items will be dynamically added here -->
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Bill Payment Website</p>
+  </footer>
+  <script src="script.js"></script>
+  <section id="payment-bill">
+    <h2>Payment Bill</h2>
+    <div id="bill-details"></div>
+  </section>
+  
+</body>
+</html>
