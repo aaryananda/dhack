@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #512F88;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: Garamond, serif;
+    font-size: 25px;
+}
+
+
+/* Define a class for center-aligned text */
+
+.center-text {
+    text-align: center;
+}
+
+form {
+    text-align: center;
+    align-items: center;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#name {
+    margin-top: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#field {
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Submit {
+    background-color: #512F88;
+    color: #fff;
+    border-radius: 15px;
+    height: 25px;
+    width: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Submit:hover {
+    background-color: #AC9ACA;
+}
+
+#date {
+    margin-top: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#prize {
+    margin-top: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.b1 {
+    background-color: #603289;
+    color: #fff;
+    border-radius: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: italic;
+    height: 25px;
+    width: 70px;
+}
+
+.b2 {
+    background-color: #603289;
+    color: #fff;
+    border-radius: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: italic;
+    height: 25px;
+    width: 70px;
+}
+
+.b3 {
+    background-color: #603289;
+    color: #fff;
+    border-radius: 15px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: italic;
+    height: 25px;
+    width: 70px;
+}
+
+.b4 {
+    background-color: #953840;
+    color: #fff;
+    border-radius: 15px;
+    height: 30px;
+    width: 190px;
+}
+
+.b5{
+    margin-left: 10px;
+}
+
+.b1:hover {
+    background-color: #9F8EBC;
+}
+
+.b2:hover {
+    background-color: #9F8EBC;
+}
+
+.b3:hover {
+    background-color: #9F8EBC;
+}
+
+.b4:hover {
+    background-color: #946165;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #512F88;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#download-btn{
+    background-color: #953840;
+    color: #fff;
+    border-radius: 15px;
+    height: 30px;
+    width: 190px; 
+    /* margin-left: 50px; */
+}
+#download-btn:hover {
+    background-color: #946165;
+    
+}

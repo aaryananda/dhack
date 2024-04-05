@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Bill Generator</h1>
+    </header>
+    <form>
+        <br><br>
+        <canvas id="canvas" height="500px" width="500px" style="border:1px solid #000000"></canvas>
+
+        <div id="name">
+            <label for="name"> Name:</label>
+            <input type="text" id="nameInput" name="name" placeholder="Enter name">
+        </div>
+<br>
+        <div id="LH NO:">
+            <label for="LH NO">LH NO:</label>
+            <input type="text" id="LH NO" name="LH NO" placeholder="Enter the LH NO">
+        </div>
+        <br>
+        
+
+        <div id="date">
+            <label for="date">Select date:</label>
+            <input type="date" id="date_input" name="date">
+        </div>
+        <div id="Amount:">
+            <label for="Amount ">Amount:</label>
+            <input type="text" id="Amount" name="Amount" placeholder="Enter the Amount">
+        </div>
+
+       
+
+    </form>
+
+
+    <div class="button-container">
+        <button class="b4" onclick="drawImage()">GENERATE BILL</button>
+       <button class="b4"> <a  href="#" id="download-btn" download>DOWNLOAD</a></button><br><br>
+
+    </div>
+
+    <script>
+        src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/2.27.0/date-fns.min.js";
+
+        var canvas = document.getElementById('canvas');
+        var ctx = canvas.getContext('2d');
+        var image = new Image();
+        var downloadBtn = document.getElementById('download-btn')
+        image.crossOrigin = "anonymous";
+        image.src = 'bill.jpeg';
+        image.onload = function() {
+            drawImage();
+        };
+
+        function drawImage() {
+            // Clear the canvas
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Draw the certificate image
+            ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+            // Draw the name from the 'nameInput' input field
+            ctx.font = '18px times new roman';
+            ctx.fillStyle = '#29e';
+            ctx.fillText(document.getElementById('nameInput').value, 120, 160);
+
+            // Draw the event from the 'fieldInput' input field
+            ctx.font = '18px times new roman';
+            ctx.fillStyle = '#29e';
+            ctx.fillText(document.getElementById('LH NO').value, 120,180 );
+
+            ctx.font = '18px  times new roman';
+            ctx.fillStyle = '#29e';
+            ctx.fillText(document.getElementById('Amount').value, 350, 290);
+            ctx.font = '18px times new roman';
+            ctx.fillStyle = '#29e';
+            var dateComponents = document.getElementById('date_input');
+            console.log(dateComponents)
+            console.log(dateComponents.value)
+           // dateComponents = dateComponents.split("-").reverse().join("-");
+            console.log(dateComponents);
+            ctx.fillText(dateComponents.value, 120, 200);
+            //ctx.font = '14px Arial'; // Using Arial as the default font
+/*ctx.fillStyle = '#29e';
+
+var dateInput = document.getElementById('date').value;
+var dateObject = new Date(dateInput);
+
+var options = { year: 'numeric', month: 'long', day: 'numeric' };
+var formattedDate = dateObject.toLocaleDateString('en-US', options);
+
+ctx.fillText(formattedDate, 225, 225);
+*/
+
+            //var selectedOption = document.querySelector('input[name="options"]:checked');
+            //if (selectedOption) {
+             //   ctx.font = '18px monotype corsiva';
+              //  ctx.fillStyle = '#29e';
+
+              //  ctx.fillText(selectedOption.value, 160, 210); // Adjust the coordinates as needed
+           // }
+          /* ctx.font = '14px Arial'; // Using Arial as the default font
+ctx.fillStyle = '#29e';
+
+var dateInput = document.getElementById('date').value;
+var formattedDate = format(new Date(dateInput), "MMM dd, yyyy");
+
+ctx.fillText(formattedDate, 200, 200);*/
+
+
+        }
+
+        downloadBtn.addEventListener('click', function() {
+            downloadBtn.href = canvas.toDataURL('image/jpg')
+            downloadBtn.download = 'Certificate - ' + document.getElementById('nameInput').value + '.jpg';
+        })
+    </script>
+</body>
+
+</html>
